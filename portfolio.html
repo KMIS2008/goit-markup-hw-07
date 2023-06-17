@@ -24,22 +24,89 @@
         <nav class="nav-nav" >
         <a href="./index.html" class="logo link">Web<span class="logo-blak">Studio</span></a>
         <ul class="list nav-item">
-          <li class="item "><a href="./index.html" class="link-link link">Studio</a></li>
-          <li class="item "><a href="./portfolio.html" class="link-link item-after link">Portfolio</a></li>
+          <li class="item "><a href="./index.html" class="link-link item-after link">Studio</a></li>
+          <li class="item "><a href="./portfolio.html" class="link-link  link">Portfolio</a></li>
           <li class="item "><a href="" class="link-link  link">Contacts</a></li>
         </ul>
       </nav>
    
 
-      <address class="address ">
+       <address class="address ">
         <ul class="list address-item">
           <li class="item"><a href="mailto:info@devstudio.com" class="address  link">info@devstudio.com</a></li>
-          <li class="item"><a href="tel:+110001111111" class="address  link">+11 (000) 111-11-11</a></li>
+          <li class="item"><a href="tel:+110001111111" class="address link">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
 
+      <button type="button" class="button-open" data-menu-open>
+        <svg class="svg-menu" width="32" height="22">
+          <use href="./images/icons.svg#icon-open-menu"></use>
+        </svg>
+      </button>
+
+      <div class="menu is-hidden" data-menu>
+        <div>
+              <button type="button" class="button-menu" data-menu-close>
+                <svg class="svg-modal" width="8" height="8">
+                  <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+              </button>
+        
+              <ul class="list nav-menu">
+               <li class="item-menu "><a href="./index.html" class="link-menu link">Studio</a></li>
+               <li class="item-menu "><a href="./portfolio.html" class="link-menu  link">Portfolio</a></li>
+               <li class="item-menu "><a href="" class="link-menu  link">Contacts</a></li>
+             </ul>
+        </div>
+        <div>
+
+          <address class="address-menu ">
+            <ul class="list address-item-menu">
+              <li class="item-menu"><a href="tel:+110001111111" class="address-menu link">+11 (000) 111-11-11</a></li>
+              <li class="item-menu"><a href="mailto:info@devstudio.com" class="address-menu  link">info@devstudio.com</a></li>
+              
+            </ul>
+          </address>
+
+             <ul class="list team-flex-menu">
+               <li class="style">
+                 <a href="" class="team-icon-back">
+                   <svg class="icon-fill-menu" width="24" height="24">
+                     <use href="./images/icons.svg#icon-instagram" >
+                     </use>
+                   </svg>
+                 </a>
+               </li>
+               <li class="style">
+                 <a href="" class="team-icon-back">
+                   <svg class="icon-fill-menu" width="24" height="24">
+                     <use href="./images/icons.svg#icon-twitter" >
+                     </use>
+                   </svg>
+                 </a>
+               </li>
+               <li class="style">
+                 <a href="" class="team-icon-back">
+                   <svg class="icon-fill-menu" width="24" height="24">
+                     <use href="./images/icons.svg#icon-facebook" >
+                     </use>
+                   </svg>
+                 </a>
+               </li>
+               <li class="style">
+                 <a href="" class="team-icon-back" >
+                   <svg class="icon-fill-menu" width="24" height="24">
+                     <use href="./images/icons.svg#icon-linkedin" >
+                     </use>
+                   </svg>
+                 </a>
+               </li>
+             </ul> 
+        </div>
+           </div>
+
      </div>
-    </header>
+    </header> 
     
     <!-- main -->
     <main>
@@ -70,14 +137,35 @@
               <a href=""  class="link main-hover">
                 
                 <div class="main-overlay">
-                   <img  src="./images/banking1.jpg" alt="bankapp" width="360">
+                  <picture>
+                    <source
+                    srcset="./images/banking1.jpg 1x,
+                    ./images/app-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)">
+
+                    <source
+                    srcset="./images/app-tab-1x.jpg 1x,
+                    ./images/app-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)">
+
+                    <source
+                    srcset="./images/app-mob-1x.jpg 1x,
+                    ./images/app-mob-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    >
+
+                    <img  src="./images/banking1.jpg" alt="bankapp" width="360">
+                  </picture>
+                   
                   
                   <p class="overlay-text overlay"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App </p>
                   
                 </div>
              
               <div class="item-style"> 
-                <h2 class="header-three text-portfolio">Banking App Interface Concept</h2>
+                <h2 class="header-three-portfolio text-portfolio">Banking App Interface Concept</h2>
                 <p class="text text-portfolio-li">App</p>
               </div>
             </a>
@@ -87,14 +175,33 @@
               <a href="" class="link main-hover">
 
               <div class="main-overlay">
-                <img  src="./images/cashless1.jpg" alt="cashless" width="360">
+                <picture>
+                  <source
+                  srcset="./images/marketing-mob-1x.jpg 1x,
+                  ./images/marketing-mob-2x.jpg 2x"
+                  media="(min-width: 1158px)">
+
+                  <source
+                  srcset="./images/marketing-tab-1x.jpg 1x,
+                  ./images/marketing-tab-2x.jpg 2x"
+                  media="(min-width: 768px)">
+
+                  <source
+                  srcset="./images/cashless1.jpg 1x,
+                  ./images/marketing-desk-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  >
+
+                 <img  src="./images/cashless1.jpg" alt="cashless" width="360">
+   
+                </picture>
 
                 <p class="overlay-text overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                
               </div>
 
                 <div class="item-style"> 
-                <h2 class="header-three text-portfolio">Cashless Payment</h2>
+                <h2 class="header-three-portfolio text-portfolio">Cashless Payment</h2>
                 <p class="text text-portfolio-li">Marketing</p>
                 </div>
               </a>
@@ -110,7 +217,7 @@
                 </div>
 
                 <div class="item-style"> 
-            <h2 class="header-three text-portfolio">Meditation App</h2>
+            <h2 class="header-three-portfolio text-portfolio">Meditation App</h2>
             <p class="text text-portfolio-li">App</p>
               </div>
           </a>
@@ -127,7 +234,7 @@
                   </div>
                  
                   <div class="item-style"> 
-                <h2 class="header-three text-portfolio">Taxi Service</h2>
+                <h2 class="header-three-portfolio text-portfolio">Taxi Service</h2>
                 <p class="text text-portfolio-li">Marketing</p>
               </div>
               </a>
@@ -144,7 +251,7 @@
                 </div>
                 
                 <div class="item-style"> 
-                <h2 class="header-three text-portfolio">Screen Illustrations</h2>
+                <h2 class="header-three-portfolio text-portfolio">Screen Illustrations</h2>
                 <p class="text text-portfolio-li">Design</p>
                 </div>
               </a>
@@ -161,7 +268,7 @@
                 </div>
            
                 <div class="item-style"> 
-                <h2 class="header-three text-portfolio">Online Courses</h2>
+                <h2 class="header-three-portfolio text-portfolio">Online Courses</h2>
                 <p class="text text-portfolio-li">Marketing</p>
                 </div>
               </a>
@@ -178,7 +285,7 @@
                 </div>
                 
                 <div class="item-style"> 
-                <h2 class="header-three text-portfolio">Instagram Stories Concept</h2>
+                <h2 class="header-three-portfolio text-portfolio">Instagram Stories Concept</h2>
                 <p class="text text-portfolio-li">Design</p>
                 </div>
               </a>
@@ -195,7 +302,7 @@
                 </div>
                
                 <div class="item-style"> 
-                <h2 class="header-three text-portfolio">Organic Food</h2>
+                <h2 class="header-three-portfolio text-portfolio">Organic Food</h2>
                 <p class="text text-portfolio-li">Web Site</p>
                 </div>
               </a>
@@ -212,7 +319,7 @@
                 </div>
                 
                 <div class="item-style"> 
-                <h2 class="header-three text-portfolio">Fresh Coffee</h2>
+                <h2 class="header-three-portfolio text-portfolio">Fresh Coffee</h2>
                 <p class="text text-portfolio-li">Web Site</p>
                 </div>
               </a>
@@ -234,7 +341,7 @@
            marketing & growth solutions.
          </p>
        </div>
-       <div >
+       <div class="media-social">
          <p class="media" >Social media</p>
    
          <ul class="list footer-flex-second">
@@ -273,31 +380,31 @@
            </li>
           </ul>
        </div>
-      
-       <div class="form-subscribe">
-        <p class="label-subscribe">Subscribe</p>
-  
-       <form class="form-footer">
-        
-          <label  class="label-footer">
-           <input type="email" name="email" class="input-subscribe" placeholder="E-mail"> 
-          </label>
-  
-         <button type="submit" class="button-subscribe"
-         
-         >Subscribe 
-         <svg class="svg-subscribe" width="24" height="24">
-          <use href="./images/icons.svg#icon-Frame"></use>
-        </svg>
-          
-      </button>
-          
-      </form> 
-      </div>
-      
-     </div>
-       </footer>
    
+       <div class="form-subscribe">
+         <p class="label-subscribe">Subscribe</p>
+   
+        <form class="form-footer">
+         
+           <label  class="label-footer">
+            <input type="email" name="email" class="input-subscribe" placeholder="E-mail"> 
+           </label>
+   
+          <button type="submit" class="button-subscribe"
+          
+          >Subscribe 
+          <svg class="svg-subscribe" width="24" height="24">
+           <use href="./images/icons.svg#icon-Frame"></use>
+         </svg>
+           
+       </button>
+           
+       </form> 
+       </div>
+   
+     </div>
+       </footer> 
+       <script src="./js/mobile-menu.js"></script>
      </body>
    </html>
    

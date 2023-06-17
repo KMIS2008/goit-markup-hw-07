@@ -153,6 +153,12 @@ margin-top: 72px;
     .menu {
         display: flex;
         }
+        /* portfolio */
+        .section-portfolio {
+            padding-top:  48px;
+            padding-bottom:  48px;
+         
+         }
     }
 
 
@@ -316,6 +322,27 @@ margin-top: 72px;
     .button-subscribe {
        
         margin-top: 0;
+    }
+    /* portfolio */
+    .section-portfolio {
+        padding-top:  64px;
+        padding-bottom:  96px;
+     }
+     .btn-li {
+        display: flex;
+       justify-content: center;
+        margin-bottom: 64px;
+    }
+    .btn-portfolio {
+        max-width: 100%;
+        padding: 12px 24px;
+    }
+    .flex-element {
+        max-width: 356px;
+      
+    }
+    .flex-container-li .flex-element:nth-child(2n) {
+        margin-right: 0;
     }
 }
 
@@ -498,6 +525,28 @@ margin-bottom: 8px;
 }
 .logo-item {
      display: inline-block; 
+}
+/* pornfolio */
+.section-portfolio {
+    padding-top:  96px;
+    padding-bottom:  120px;
+ }
+ .btn-li {
+    display: flex;
+    justify-content: center;
+ 
+    margin-bottom: 72px;
+}
+.btn-portfolio {
+    width: 126px;
+    padding: 12px 24px;
+}
+.flex-element {
+    width: 360px;
+}
+
+.flex-container-li .flex-element:nth-child(3n) {
+    margin-right: 0;
 }
 }
 
