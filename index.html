@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
   </head>
   <body>
 
     <!-- header -->
-    <header  class="hedear-border">
+
+
+     <header  class="hedear-border">
       <div class="container header-nav">
 
         <nav class="nav-nav" >
@@ -30,35 +33,102 @@
       </nav>
    
 
-      <address class="address ">
+       <address class="address ">
         <ul class="list address-item">
           <li class="item"><a href="mailto:info@devstudio.com" class="address  link">info@devstudio.com</a></li>
           <li class="item"><a href="tel:+110001111111" class="address link">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
 
+      <button type="button" class="button-open" data-menu-open>
+        <svg class="svg-menu" width="32" height="22">
+          <use href="./images/icons.svg#icon-open-menu"></use>
+        </svg>
+      </button>
+
+      <div class="menu is-hidden" data-menu>
+        <div>
+              <button type="button" class="button-menu" data-menu-close>
+                <svg class="svg-modal" width="8" height="8">
+                  <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+              </button>
+        
+              <ul class="list nav-menu">
+               <li class="item-menu "><a href="./index.html" class="link-menu link">Studio</a></li>
+               <li class="item-menu "><a href="./portfolio.html" class="link-menu  link">Portfolio</a></li>
+               <li class="item-menu "><a href="" class="link-menu  link">Contacts</a></li>
+             </ul>
+        </div>
+        <div>
+
+          <address class="address-menu ">
+            <ul class="list address-item-menu">
+              <li class="item-menu"><a href="tel:+110001111111" class="address-menu link">+11 (000) 111-11-11</a></li>
+              <li class="item-menu"><a href="mailto:info@devstudio.com" class="address-menu  link">info@devstudio.com</a></li>
+              
+            </ul>
+          </address>
+
+             <ul class="list team-flex-menu">
+               <li class="style">
+                 <a href="" class="team-icon-back">
+                   <svg class="icon-fill-menu" width="24" height="24">
+                     <use href="./images/icons.svg#icon-instagram" >
+                     </use>
+                   </svg>
+                 </a>
+               </li>
+               <li class="style">
+                 <a href="" class="team-icon-back">
+                   <svg class="icon-fill-menu" width="24" height="24">
+                     <use href="./images/icons.svg#icon-twitter" >
+                     </use>
+                   </svg>
+                 </a>
+               </li>
+               <li class="style">
+                 <a href="" class="team-icon-back">
+                   <svg class="icon-fill-menu" width="24" height="24">
+                     <use href="./images/icons.svg#icon-facebook" >
+                     </use>
+                   </svg>
+                 </a>
+               </li>
+               <li class="style">
+                 <a href="" class="team-icon-back" >
+                   <svg class="icon-fill-menu" width="24" height="24">
+                     <use href="./images/icons.svg#icon-linkedin" >
+                     </use>
+                   </svg>
+                 </a>
+               </li>
+             </ul> 
+        </div>
+           </div>
+
      </div>
-    </header>
+    </header> 
+
     <!-- main -->
     <main>
 
       <!-- section1 -->
       
-      <section class="hero section-hero">
+     <section class="hero section-hero">
         <div class="container">
         <h1 class="header">Effective Solutions for Your Business</h1>
 
         <button type="button" class="button pointer " data-modal-open >Order Service</button>
       </div >
-    </section>
+    </section> 
       
-
       <!-- section2 Our operating principles -->
       
       <section class="section-principles">
         <div class="container">
        
-          <h2 class="header-two" hidden>Our operating principles</h2>
+          <h2 class="header-twoo" hidden>Our operating principles</h2>
         <ul class="list principles">
           <li class="item-principiles">
               <div class="principles-icon-back list principles-flex">
@@ -121,9 +191,10 @@
       </section>
 
       <!-- section 3 What are we doing -->
+
       <section class="section-what">
       <div class="container">
-        <h2 class="header-twoo header-twoo-text">What are we doing</h2>
+        <h2 class="header-twoo header-twoo-text what-text">What are we doing</h2>
         <ul class="list what">
           <li class="what-li">
             <img src="./images/monitor_1.jpg" alt="monitor" width="360" />
@@ -136,16 +207,19 @@
           </li>
         </ul>
         </div>
-      </section>
+      </section> 
 
       <!-- section 4 Our Team -->
+
       <section class="section-team">
       <div class="container">
       
         <h2 class="header-twoo header-twoo-text">Our Team</h2>
         <ul class="list team-team">
           <li class="team">
-            <img src="./images/Mark_1.jpg" alt="Mark Guerrero" width="264" />
+            <img
+            srcset="./images/Mark_1.jpg 1x, ./images/mark-2x.jpg 2x" 
+            src="./images/Mark_1.jpg" alt="Mark Guerrero" width="264" />
 
             <div class="section-four">
             <h3 class="header-three text-team-li">Mark Guerrero</h3>
@@ -189,7 +263,9 @@
           </li>
 
           <li class="team">
-            <img src="./images/Tom_1.jpg" alt="Tom Ford" width="264" />
+            <img 
+            srcset="./images/Tom_1.jpg 1x, ./images/tom-2x.jpg 2x "
+            src="./images/Tom_1.jpg" alt="Tom Ford" width="264" />
 
            <div class="section-four">
             <h3 class="header-three text-team-li">Tom Ford</h3>
@@ -233,7 +309,9 @@
           </li>
 
           <li class="team">
-            <img src="./images/Camila_1.jpg" alt="Camila Garcia" width="264" />
+            <img
+            srcset="./images/Camila_1.jpg 1x, ./images/comila-2x.jpg 2x" 
+            src="./images/Camila_1.jpg" alt="Camila Garcia" width="264" />
 
             <div class="section-four">
             <h3 class="header-three text-team-li">Camila Garcia</h3>
@@ -277,7 +355,9 @@
           </li>
 
           <li class="team">
-            <img src="./images/Daniel_1.jpg" alt="Daniel Wilson" width="264" />
+            <img 
+            srcset="./images/Daniel_1.jpg 1x, ./images/daniel-2x.jpg 2x"
+            src="./images/Daniel_1.jpg" alt="Daniel Wilson" width="264" />
 
             <div class="section-four">
             <h3 class="header-three text-team-li">Daniel Wilson</h3>
@@ -321,12 +401,12 @@
         </li>
       </ul>
       </div>
-    </section>
+    </section> 
     
     
     <!-- section 5 -->
     
-    <section class="section-customer">
+     <section class="section-customer">
       <div class="container">
         <h2 class="text-customer">Customers</h2>
         <ul class="list customer-flex">
@@ -380,7 +460,6 @@
           </li>
         </ul>
 
-
       </div>
 
     </section>
@@ -389,7 +468,7 @@
 
     <!-- footer -->
     
-    <footer class="footer">
+     <footer class="footer">
    <div class="container footer-flex-main"> 
     
     <div class="media-second">
@@ -400,7 +479,7 @@
         marketing & growth solutions.
       </p>
     </div>
-    <div >
+    <div class="media-social">
       <p class="media" >Social media</p>
 
       <ul class="list footer-flex-second">
@@ -462,7 +541,7 @@
     </div>
 
   </div>
-    </footer>
+    </footer> 
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -525,11 +604,13 @@
   
               <button type="submit" class="form-button-sand">Send</button>
           
-
         </form>
       </div>
 
-    </div>
+
+    </div> 
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
